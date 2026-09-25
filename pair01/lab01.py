@@ -23,14 +23,14 @@
 
 # d
 
-a, b = map(int, input("введи 2 числа через пробіл: ").split(" "))
+# a, b = map(int, input("введи 2 числа через пробіл: ").split(" "))
 
-if a > b:
-    print(a)
-elif a < b:
-    print(b)
-else:
-    print("a == b")
+# if a > b:
+#     print(a)
+# elif a < b:
+#     print(b)
+# else:
+#     print("a == b")
 
 
 #2
