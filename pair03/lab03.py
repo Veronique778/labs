@@ -92,6 +92,6 @@
 
 # print("Після заміни:", sentence)
 
-print("Найдовше слово:", longest)
-print("Найкоротші:", shortest)
+# print("Найдовше слово:", longest)
+# print("Найкоротші:", shortest)
 
