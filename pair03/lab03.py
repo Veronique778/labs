@@ -54,15 +54,43 @@
 #     print("Не анаграми")
 
 # #№ 4
-sentence = input("Речення: ")
-words = sentence.split()
-longest = words[0]
-shortest = words[0]
-for word in words:
-    if len(word) > len(longest):
-        longest = word
-    if len(word) < len(shortest):
-        shortest = word
+# sentence = input("Речення: ")
+
+# words = sentence.split()
+
+# longest = words[0]
+# shortest = words[0]
+
+# unique_words = ""
+# unique_count = 0
+
+# for word in words:
+#     if len(word) > len(longest):
+#         longest = word
+#     elif len(word) == len(longest):
+#         longest += ", " + word
+
+#     if len(word) < len(shortest):
+#         shortest = word
+#     elif len(word) == len(shortest):
+#         shortest += ", " + word
+
+#     word_lower = word.lower()
+
+#     if "|" + word_lower + "|" not in unique_words:
+#         unique_words += "|" + word_lower + "|"
+#         unique_count += 1
+
+# print("Найдовші:", longest)
+# print("Найкоротші:", shortest)
+# print("Унікальних слів:", unique_count)
+
+# old_word = input("Слово для заміни: ")
+# new_word = input("Нове слово: ")
+
+# sentence = sentence.replace(old_word, new_word)
+
+# print("Після заміни:", sentence)
 
 print("Найдовше слово:", longest)
 print("Найкоротші:", shortest)
