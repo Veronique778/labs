@@ -45,20 +45,20 @@
 
 #№3
 
-from datetime import*
+# from datetime import*
 
-day = int(input("day: "))
-month = int(input("month: "))
-year = int(input("year: "))
+# day = int(input("day: "))
+# month = int(input("month: "))
+# year = int(input("year: "))
 
-event = date(year, month, day)
-today = date.today()
+# event = date(year, month, day)
+# today = date.today()
 
-diff_ce = (event - today).days
+# diff_ce = (event - today).days
 
-if diff_ce > 0:
-    print(f"your date is comming in {diff_ce} days")
-if diff_ce < 0:
-    print(f"your date was {abs(diff_ce)} day ago")
-if diff_ce == 0:
-    print("it`s today omg!!")
+# if diff_ce > 0:
+#     print(f"your date is comming in {diff_ce} days")
+# if diff_ce < 0:
+#     print(f"your date was {abs(diff_ce)} day ago")
+# if diff_ce == 0:
+#     print("it`s today omg!!")
