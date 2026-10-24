@@ -1,5 +1,4 @@
-
-# №1
+# # №1
 
 # class Rectangle:
 #     def __init__(self, width, height):
@@ -13,9 +12,10 @@
 #         return 2 * (self.width + self.height)
 
 #     def info(self):
-#         print("Розміри:", self.width, "x", self.height)
-#         print("Площа:", self.area())
-#         print("Периметр:", self.perimeter())
+#         print(self.width, self.height)
+#         print("Area:", self.area())
+#         print("Perimeter:", self.perimeter())
+
 
 # r1 = Rectangle(5, 3)
 # r2 = Rectangle(10, 4)
@@ -24,7 +24,7 @@
 # r2.info()
 
 
-# №2
+# # №2
 
 # class Student:
 #     def __init__(self, name):
@@ -35,7 +35,7 @@
 #         if 1 <= grade <= 12:
 #             self.grades.append(grade)
 #         else:
-#             print("Оцінка повинна бути від 1 до 12.")
+#             print("Invalid grade")
 
 #     def average(self):
 #         if len(self.grades) == 0:
@@ -43,15 +43,12 @@
 #         return sum(self.grades) / len(self.grades)
 
 #     def __str__(self):
-#         return (
-#             f"{self.name}: {self.grades}, "
-#             f"середній = {round(self.average(), 2)}"
-#         )
+#         return f"{self.name}, {self.grades}, {round(self.average(), 2)}"
 
 
 # student = Student("Plyushch Veronica")
 
-# print("Середній без оцінок:", student.average())
+# print(student.average())
 
 # student.add_grade(12)
 # student.add_grade(12)
@@ -61,7 +58,7 @@
 # print(student)
 
 
-# №3
+# # №3
 
 # student1 = Student("Koroliuk Illya")
 # student2 = Student("Panechko Sophie")
@@ -95,13 +92,14 @@
 #     if student.average() > best_student.average():
 #         best_student = student
 
-# print("Учні з найвищим середнім балом:")
+# print("Best:")
 
 # for student in students:
 #     if student.average() == best_student.average():
-#         print(student.name, "—", round(student.average(), 2))
+#         print(student.name, round(student.average(), 2))
 
-# №4
+
+# # №4
 
 # class BankAccount:
 #     def __init__(self, owner, balance):
@@ -110,28 +108,27 @@
 
 #     def deposit(self, amount):
 #         if amount <= 0:
-#             print("Помилка: сума поповнення повинна бути додатною.")
+#             print("Invalid amount")
 #         else:
 #             self.balance += amount
-#             print("Поповнення:", amount)
+#             print("Deposit:", amount)
 
 #     def withdraw(self, amount):
 #         if amount <= 0:
-#             print("Помилка: сума списання повинна бути додатною.")
+#             print("Invalid amount")
 #         elif amount > self.balance:
-#             print("Помилка: недостатньо коштів.")
+#             print("Insufficient funds")
 #         else:
 #             self.balance -= amount
-#             print("Списання:", amount)
+#             print("Withdraw:", amount)
 
 #     def info(self):
-#         print(self.owner, "— баланс:", self.balance)
+#         print(self.owner, self.balance)
 
 
-# account1 = BankAccount("Іван", 1000)
-# account2 = BankAccount("Ольга", 700)
+# account1 = BankAccount("Ivan", 1000)
+# account2 = BankAccount("Olha", 700)
 
-# print("\nРахунок Івана:")
 # account1.info()
 # account1.deposit(500)
 # account1.withdraw(300)
@@ -141,7 +138,6 @@
 # account1.withdraw(0)
 # account1.withdraw(-50)
 
-# print("\nРахунок Ольги:")
 # account2.info()
 # account2.deposit(100)
 # account2.withdraw(200)
@@ -151,6 +147,5 @@
 # account2.withdraw(0)
 # account2.withdraw(-100)
 
-# print("\nКінцевий стан рахунків:")
 # account1.info()
 # account2.info()
